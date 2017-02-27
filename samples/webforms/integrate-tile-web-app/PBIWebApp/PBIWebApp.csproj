@@ -100,6 +100,7 @@
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Cloud.config" />
     <None Include="Properties\PublishProfiles\PBICodeSample.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

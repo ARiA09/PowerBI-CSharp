@@ -31,7 +31,7 @@ namespace PBIWebApp
 
             ClientCredential cc = new ClientCredential
                 (Properties.Settings.Default.ClientID,
-                Properties.Settings.Default.ClientSecretKey);
+                Properties.Settings.Default.ClientSecret);
 
             AuthenticationResult AR = AC.AcquireTokenByAuthorizationCode(code, new Uri(redirectUri), cc);
 

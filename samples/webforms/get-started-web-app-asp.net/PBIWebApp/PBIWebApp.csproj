@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -96,6 +97,9 @@
     <Content Include="Global.asax" />
     <Content Include="packages.config">
       <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Cloud.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Properties\PublishProfiles\PBICodeSample.pubxml" />
     <None Include="Properties\Settings.settings">

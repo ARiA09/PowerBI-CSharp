@@ -44,9 +44,10 @@ namespace PBIWebApp.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("{Enter your app SecretKey}")]
-        public string ClientSecretKey {
+        public string ClientSecret
+        {
             get {
-                return ((string)(this["ClientSecretKey"]));
+                return ((string)(this["ClientSecret"]));
             }
         }
         

@@ -79,7 +79,7 @@ namespace PBIWebApp
             string responseContent = string.Empty;
 
             //The resource Uri to the Power BI REST API resource
-            string datasetsUri = Properties.Settings.Default.PowerBiDataset;
+            string datasetsUri = String.Format("{0}//datasets",Properties.Settings.Default.PowerBiDataset);
 
             //Configure datasets request
             System.Net.WebRequest request = System.Net.WebRequest.Create(datasetsUri) as System.Net.HttpWebRequest;
