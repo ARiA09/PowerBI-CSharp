@@ -40,7 +40,6 @@ namespace PBIGettingStarted
 
         //Uri for Power BI datasets
         private static string datasetsUri = Properties.Settings.Default.PowerBiDataset;
-        private static string datasetsBetaUri = Properties.Settings.Default.PowerBiDatasetBeta;
 
         //Example dataset name and group name
         private static string datasetName = "SalesMarketing";
@@ -53,7 +52,7 @@ namespace PBIGettingStarted
             string pbixPath = string.Format(@"{0}\AdventureWorks.pbix", di.Parent.Parent.FullName);
             string datasetDisplayName = "AdventureWorks";
 
-            string importResponse = Import(string.Format("{0}/imports?datasetDisplayName={1}", datasetsBetaUri, datasetDisplayName), pbixPath);
+            string importResponse = Import(string.Format("{0}/imports?datasetDisplayName={1}", datasetsUri, datasetDisplayName), pbixPath);
             string importDatasetId = GetDatasets().value.GetDataset(datasetDisplayName).Id;
             Console.WriteLine(string.Format("Imported: {0}. Dataset ID: {1}", datasetDisplayName, importDatasetId));
             Console.ReadLine();
