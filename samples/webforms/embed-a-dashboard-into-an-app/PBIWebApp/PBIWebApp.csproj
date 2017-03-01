@@ -122,7 +122,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="Cloud.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>

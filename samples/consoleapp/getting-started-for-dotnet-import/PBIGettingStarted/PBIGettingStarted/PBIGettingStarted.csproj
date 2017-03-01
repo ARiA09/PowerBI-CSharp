@@ -72,7 +72,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Cloud.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

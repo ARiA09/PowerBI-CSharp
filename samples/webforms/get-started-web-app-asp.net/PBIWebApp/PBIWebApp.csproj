@@ -99,7 +99,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Cloud.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Properties\PublishProfiles\PBICodeSample.pubxml" />
     <None Include="Properties\Settings.settings">
